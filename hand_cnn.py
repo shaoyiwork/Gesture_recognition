@@ -1,5 +1,5 @@
 '''
-This is a cat_dog Two classifier.
+This is a Gesture three classifier.
 We use CNN and other net to train the model.
 '''
 
@@ -114,7 +114,7 @@ if __name__ == '__main__':
     x_train, x_test, y_train, y_test = train_test_split(images, lables, test_size=0.2)
     model = Net_model_simple()
     model.fit(x_train, y_train, batch_size=nbatch_size, epochs=nepochs, verbose=1, validation_data=(x_test, y_test))
-    model.save("hand_color_model.h5")
+    model.save("hand_model.h5")
     score = model.evaluate(x_test, y_test, verbose=0)
     print('Test loss:', score[0])
     print('Test accuracy:', score[1])

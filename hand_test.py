@@ -11,7 +11,7 @@ from keras.models import load_model
 
 
 model = Sequential()
-model=load_model("hand_color_model.h5")
+model=load_model("hand_model.h5")
 model.summary()
 
 img1 = image.load_img(path="./hand_data/test/five_197.png", target_size=(234,234,3))
